@@ -25,7 +25,7 @@ type RESTSession = {
 
 export const defaultRESTRequest: HoppRESTRequest = {
   v: RESTReqSchemaVersion,
-  endpoint: "https://echo.hoppscotch.io",
+  endpoint: process.env.DEFAULT_ENDPOINT || "https://echo.hoppscotch.io",
   name: "Untitled request",
   params: [{ key: "", value: "", active: true }],
   headers: [{ key: "", value: "", active: true }],

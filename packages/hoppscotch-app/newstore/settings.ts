@@ -61,8 +61,8 @@ export const defaultSettings: SettingsType = {
   syncEnvironments: true,
 
   PROXY_ENABLED: false,
-  PROXY_URL: "https://proxy.hoppscotch.io/",
-  PROXY_KEY: "",
+  PROXY_URL: process.env.PROXY_URL || "",
+  PROXY_KEY: process.env.PROXY_KEY || "",
   EXTENSIONS_ENABLED: true,
   EXPERIMENTAL_URL_BAR_ENABLED: true,
   URL_EXCLUDES: {

@@ -318,6 +318,9 @@ export default {
     APP_ID: process.env.APP_ID,
     MEASUREMENT_ID: process.env.MEASUREMENT_ID,
     BASE_URL: process.env.BASE_URL,
+    PROXY_URL: process.env.PROXY_URL,
+    PROXY_KEY: process.env.PROXY_KEY,
+    DEFAULT_ENDPOINT: process.env.DEFAULT_ENDPOINT,
   },
 
   // Router configuration (https://nuxtjs.org/api/configuration-router)
